@@ -1,0 +1,23 @@
+spec:
+  template:
+    spec:
+      containers:
+        - resources:
+            limits:
+              cpu: 1
+              memory: 1Gi
+            requests:
+              cpu: 100m
+              memory: 500Mi
+          volumeMounts:
+            - name: config
+              mountPath: /app/config
+          env:
+            - name: JAVA_OPTIONS
+              value: "-Dswarm.project.stage.file=file:///app/config/project-defaults.yml"
+            - name: GC_MAX_METASPACE_SIZE
+              value: '200'
+      volumes:
+        - configMap:
+            name: gateway-service
+          name: config       

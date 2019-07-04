@@ -1,0 +1,7 @@
+freelancer:
+  service:
+    url: http://freelancer-service:8082/
+    
+projects:
+  service:
+    url: http://project-service:8081/

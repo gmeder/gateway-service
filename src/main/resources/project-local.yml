@@ -1,0 +1,7 @@
+freelancer:
+  service:
+    url: http://localhost:8082/
+    
+projects:
+  service:
+    url: http://localhost:8081/
