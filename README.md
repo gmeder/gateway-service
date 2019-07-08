@@ -12,7 +12,7 @@
 
 ## Set the homework project
  
-	$ oc project homework
+	$ oc project assignment-gmeder
 
 ## Create configmap	
 
@@ -22,15 +22,15 @@
 
 	$ mvn clean fabric8:deploy -Popenshift -DskipTests
 	
-# Test on Openshift
+# Test on Openshift (Shared Cluster 3.11)
 
-	$ curl http://gateway-service-homework.[OPENSHIFT_LOCAL_SUBDOMAIN]/gateway/freelancers
+	$ curl http://gateway.assignment-gmeder.apps.na311.openshift.opentlc.com/gateway/freelancers
 
-	$ curl http://gateway-service-homework.[OPENSHIFT_LOCAL_SUBDOMAIN]/gateway/freelancers/123
+	$ curl http://gateway.assignment-gmeder.apps.na311.openshift.opentlc.com/gateway/freelancers/123
 
-	$ curl http://gateway-service-homework.[OPENSHIFT_LOCAL_SUBDOMAIN]/gateway/projects
+	$ curl http://gateway.assignment-gmeder.apps.na311.openshift.opentlc.com/gateway/projects
 
-	$ curl http://gateway-service-homework.[OPENSHIFT_LOCAL_SUBDOMAIN]/gateway/projects/11111
+	$ curl http://gateway.assignment-gmeder.apps.na311.openshift.opentlc.com/gateway/projects/11111
 	
-	$ curl http://gateway-service-homework.[OPENSHIFT_LOCAL_SUBDOMAIN]/gateway/freelancers/status/open
+	$ curl http://gateway.assignment-gmeder.apps.na311.openshift.opentlc.com/gateway/projects/status/open
 

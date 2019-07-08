@@ -1,0 +1,7 @@
+spec:
+  host: gateway.assignment-gmeder.apps.na311.openshift.opentlc.com
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: gateway-service
