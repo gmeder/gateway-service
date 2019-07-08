@@ -1,3 +1,7 @@
+# Project documentation
+
+See [docs](DOC.md)
+
 # Run project locally
 
 ## Compile project
